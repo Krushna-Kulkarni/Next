@@ -1,4 +1,4 @@
-import { useEffect} from "react";
+import { useEffect, useState} from "react";
 
 export const ProductListing = () => {
     const [productData, setProductData] = useState([])
@@ -19,7 +19,7 @@ export const ProductListing = () => {
     return (
         <>
         <h1>This is ProductListing Page</h1>
-        <ul>
+        {/* <ul>
             {
                 
                 products.map(({title, author}) => {
@@ -27,7 +27,7 @@ export const ProductListing = () => {
                     })
                 
             }
-        </ul>
+        </ul> */}
         </>
     )
 }
