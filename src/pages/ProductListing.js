@@ -18,7 +18,7 @@ export const ProductListing = () => {
    
     return (
         <>
-        <h1>This is ProductListing Page</h1>
+        <h1>This is Product Listing Page</h1>
         {/* <ul>
             {
                 
