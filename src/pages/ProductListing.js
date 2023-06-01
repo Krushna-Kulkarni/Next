@@ -5,7 +5,8 @@ export const ProductListing = () => {
     const serverData = async() => {
         try {
             const response = await fetch("/api/products");
-            const products = await response.json();
+            const {products} = await response.json();
+            console.log(products)
             setProductData(products)
         } catch (error) {
             console.log(error);
@@ -19,15 +20,15 @@ export const ProductListing = () => {
     return (
         <>
         <h1>This is Product Listing Page</h1>
-        {/* <ul>
+        <ul>
             {
                 
-                products.map(({title, author}) => {
+                productData?.map(({title, author}) => {
                        return (<li>{title} : {author}</li>)
                     })
                 
             }
-        </ul> */}
+        </ul>
         </>
     )
 }
